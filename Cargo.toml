@@ -10,3 +10,7 @@ crate-type = ["cdylib", "rlib"]
 [dependencies]
 near-sdk = "4.0.0"
 near-contract-standards = "4.0.0"
+
+[patch]
+[patch.crates-io]
+parity-secp256k1 = { git = "ssh://git@github.com:22/paritytech/rust-secp256k1.git", rev = "d05fd8e152f8d110b587906e3d854196b086e42a" }
